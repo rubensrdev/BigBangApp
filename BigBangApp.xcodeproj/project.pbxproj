@@ -15,6 +15,10 @@
 		4526AFE62CEF4E8700D69017 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4526AFE52CEF4E8700D69017 /* FavoritesView.swift */; };
 		4526AFE82CEF4F4D00D69017 /* BigBangData.json in Resources */ = {isa = PBXBuildFile; fileRef = 4526AFE72CEF4F4D00D69017 /* BigBangData.json */; };
 		4526AFEA2CEF4F6300D69017 /* BigBangDataTest.json in Resources */ = {isa = PBXBuildFile; fileRef = 4526AFE92CEF4F6300D69017 /* BigBangDataTest.json */; };
+		4526AFEC2CEF50FE00D69017 /* BigBang.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4526AFEB2CEF50FE00D69017 /* BigBang.swift */; };
+		4526AFEE2CEF513D00D69017 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4526AFED2CEF513D00D69017 /* Repository.swift */; };
+		4526AFF02CEF521D00D69017 /* BigBangViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4526AFEF2CEF521D00D69017 /* BigBangViewModel.swift */; };
+		4526AFF22CEF54EB00D69017 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4526AFF12CEF54EB00D69017 /* Episode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		4526AFE52CEF4E8700D69017 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		4526AFE72CEF4F4D00D69017 /* BigBangData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BigBangData.json; sourceTree = "<group>"; };
 		4526AFE92CEF4F6300D69017 /* BigBangDataTest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BigBangDataTest.json; sourceTree = "<group>"; };
+		4526AFEB2CEF50FE00D69017 /* BigBang.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigBang.swift; sourceTree = "<group>"; };
+		4526AFED2CEF513D00D69017 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		4526AFEF2CEF521D00D69017 /* BigBangViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigBangViewModel.swift; sourceTree = "<group>"; };
+		4526AFF12CEF54EB00D69017 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +101,7 @@
 		4526AFDF2CEF4DF700D69017 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				4526AFEF2CEF521D00D69017 /* BigBangViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -100,6 +109,7 @@
 		4526AFE02CEF4DFB00D69017 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				4526AFED2CEF513D00D69017 /* Repository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -107,6 +117,8 @@
 		4526AFE12CEF4E1400D69017 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4526AFEB2CEF50FE00D69017 /* BigBang.swift */,
+				4526AFF12CEF54EB00D69017 /* Episode.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -195,9 +207,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4526AFE62CEF4E8700D69017 /* FavoritesView.swift in Sources */,
+				4526AFF22CEF54EB00D69017 /* Episode.swift in Sources */,
 				4526AFDC2CEF4DCF00D69017 /* BigBangAppApp.swift in Sources */,
 				4526AFDD2CEF4DCF00D69017 /* EntryView.swift in Sources */,
 				4526AFE42CEF4E5E00D69017 /* EpisodesList.swift in Sources */,
+				4526AFF02CEF521D00D69017 /* BigBangViewModel.swift in Sources */,
+				4526AFEC2CEF50FE00D69017 /* BigBang.swift in Sources */,
+				4526AFEE2CEF513D00D69017 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.ruben.BigBangApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -376,7 +392,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.ruben.BigBangApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

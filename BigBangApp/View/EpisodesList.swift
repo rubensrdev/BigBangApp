@@ -8,8 +8,24 @@
 import SwiftUI
 
 struct EpisodesList: View {
+    @ObservedObject var bigBangVM = BigBangViewModel()
+    
     var body: some View {
-        Text("There is the EpisodesList view")
+        NavigationStack {
+            List {
+                ForEach(bigBangVM.episodes) { episode in
+                    VStack(alignment: .leading) {
+                        Text("\(episode.name)")
+                            .font(.headline)
+                        Text("\(episode.seasonAndEpisode)")
+                            .font(.subheadline)
+                            .foregroundStyle(.secondary)
+                        
+                    }
+                }
+            }
+            .navigationTitle("Big Bang Episodes")
+        }
     }
 }
 
