@@ -15,12 +15,11 @@ struct EpisodesList: View {
             List {
                 ForEach(bigBangVM.episodes) { episode in
                     VStack(alignment: .leading) {
-                        Text("\(episode.name)")
+                        Text("\(episode.episodeData.name)")
                             .font(.headline)
-                        Text("\(episode.seasonAndEpisode)")
+                        Text("\(episode.episodeData.seasonAndEpisode)")
                             .font(.subheadline)
                             .foregroundStyle(.secondary)
-                        
                     }
                 }
             }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Episode {
+struct Episode: Codable, Hashable, Identifiable {
     let episodeData: BigBang
     var favorite: Bool = false
     var watched: Bool = false
