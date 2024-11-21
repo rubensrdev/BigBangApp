@@ -17,3 +17,9 @@ struct Episode {
         episodeData.id
     }
 }
+
+typealias Episodes = [Episode]
+
+func convertBigBangsToEpisodes(_ bigBangs: bigBangs) -> Episodes {
+    bigBangs.map { Episode(episodeData: $0)}
+}
