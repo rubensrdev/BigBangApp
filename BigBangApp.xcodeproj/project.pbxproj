@@ -19,6 +19,7 @@
 		4526AFEE2CEF513D00D69017 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4526AFED2CEF513D00D69017 /* Repository.swift */; };
 		4526AFF02CEF521D00D69017 /* BigBangViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4526AFEF2CEF521D00D69017 /* BigBangViewModel.swift */; };
 		4526AFF22CEF54EB00D69017 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4526AFF12CEF54EB00D69017 /* Episode.swift */; };
+		4526AFF52CEFB05400D69017 /* OrderBySeasonToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4526AFF42CEFB05400D69017 /* OrderBySeasonToolbar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		4526AFED2CEF513D00D69017 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		4526AFEF2CEF521D00D69017 /* BigBangViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigBangViewModel.swift; sourceTree = "<group>"; };
 		4526AFF12CEF54EB00D69017 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		4526AFF42CEFB05400D69017 /* OrderBySeasonToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBySeasonToolbar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 		4526AFDE2CEF4DF200D69017 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4526AFF32CEFB04600D69017 /* Components */,
 				4526AFD82CEF4DCF00D69017 /* EntryView.swift */,
 				4526AFE32CEF4E5E00D69017 /* EpisodesList.swift */,
 				4526AFE52CEF4E8700D69017 /* FavoritesView.swift */,
@@ -129,6 +132,14 @@
 				4526AFE72CEF4F4D00D69017 /* BigBangData.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		4526AFF32CEFB04600D69017 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4526AFF42CEFB05400D69017 /* OrderBySeasonToolbar.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +223,7 @@
 				4526AFDD2CEF4DCF00D69017 /* EntryView.swift in Sources */,
 				4526AFE42CEF4E5E00D69017 /* EpisodesList.swift in Sources */,
 				4526AFF02CEF521D00D69017 /* BigBangViewModel.swift in Sources */,
+				4526AFF52CEFB05400D69017 /* OrderBySeasonToolbar.swift in Sources */,
 				4526AFEC2CEF50FE00D69017 /* BigBang.swift in Sources */,
 				4526AFEE2CEF513D00D69017 /* Repository.swift in Sources */,
 			);
