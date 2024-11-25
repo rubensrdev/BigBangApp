@@ -24,4 +24,7 @@ extension BigBang {
     var seasonAndEpisode: String {
         "S\(season) E\(number)"
     }
+    var runtimeInMinutes: String {
+        "\(runtime) min"
+    }
 }

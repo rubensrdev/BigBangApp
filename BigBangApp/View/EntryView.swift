@@ -14,7 +14,7 @@ struct EntryView: View {
                 .tabItem {
                     Label("Episodes", systemImage: "tv")
                 }
-            FavoritesView()
+            FavouritesView()
                 .tabItem {
                     Label("Favorites", systemImage: "star")
                 }
@@ -24,4 +24,5 @@ struct EntryView: View {
 
 #Preview {
     EntryView()
+        .environmentObject(BigBangViewModel())
 }
