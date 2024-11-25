@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct EpisodesList: View {
-    @ObservedObject var bigBangVM = BigBangViewModel()
+    @EnvironmentObject private var bigBangVM: BigBangViewModel
     
     var body: some View {
         NavigationStack {
@@ -28,6 +28,7 @@ struct EpisodesList: View {
 
 #Preview {
     EpisodesList()
+        .environmentObject(BigBangViewModel())
 }
 
 
