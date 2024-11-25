@@ -16,9 +16,7 @@ struct EpisodeRow: View {
                 Text("\(episode.episodeData.seasonAndEpisode)")
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
-                HStack {
-                    // TODO -> Los iconos de si es FAV, Visto, etc
-                }
+                ControlIcons(episode: episode)
             }
             Spacer()
             Image(episode.episodeData.image)
@@ -37,3 +35,5 @@ struct EpisodeRow: View {
         }
     }
 }
+
+

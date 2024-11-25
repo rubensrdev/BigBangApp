@@ -22,6 +22,7 @@
 		4526AFF52CEFB05400D69017 /* OrderBySeasonToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4526AFF42CEFB05400D69017 /* OrderBySeasonToolbar.swift */; };
 		4526AFF92CF4932600D69017 /* EpisodeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4526AFF82CF4932600D69017 /* EpisodeRow.swift */; };
 		4526AFFB2CF4937B00D69017 /* PreviewViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4526AFFA2CF4937B00D69017 /* PreviewViews.swift */; };
+		4526AFFD2CF499C100D69017 /* ControlIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4526AFFC2CF499C100D69017 /* ControlIcons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		4526AFF42CEFB05400D69017 /* OrderBySeasonToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBySeasonToolbar.swift; sourceTree = "<group>"; };
 		4526AFF82CF4932600D69017 /* EpisodeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeRow.swift; sourceTree = "<group>"; };
 		4526AFFA2CF4937B00D69017 /* PreviewViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViews.swift; sourceTree = "<group>"; };
+		4526AFFC2CF499C100D69017 /* ControlIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlIcons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 		4526AFF32CEFB04600D69017 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				4526AFFC2CF499C100D69017 /* ControlIcons.swift */,
 				4526AFF82CF4932600D69017 /* EpisodeRow.swift */,
 				4526AFF42CEFB05400D69017 /* OrderBySeasonToolbar.swift */,
 			);
@@ -233,6 +236,7 @@
 				4526AFF02CEF521D00D69017 /* BigBangViewModel.swift in Sources */,
 				4526AFF52CEFB05400D69017 /* OrderBySeasonToolbar.swift in Sources */,
 				4526AFEC2CEF50FE00D69017 /* BigBang.swift in Sources */,
+				4526AFFD2CF499C100D69017 /* ControlIcons.swift in Sources */,
 				4526AFEE2CEF513D00D69017 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
