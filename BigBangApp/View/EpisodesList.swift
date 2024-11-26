@@ -20,6 +20,9 @@ struct EpisodesList: View {
                 }
             }
             .navigationTitle("Big Bang Episodes")
+            .navigationDestination(for: Episode.self, destination: { episode in
+                EpisodeEditView(episodeEditVM: EpisodeEditViewModel(episode: episode))
+            })
             .searchable(text: $bigBangVM.searchText, prompt: "Search for an episode by name")
             .orderBySeason($bigBangVM.seasonSelected)
         }

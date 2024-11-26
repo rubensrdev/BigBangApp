@@ -26,7 +26,7 @@ extension Episode {
         episodeData: .preview,
         favorite: false,
         watched: false,
-        rating: 8,
+        rating: 3,
         notes: "Very funny episode, good moments too"
     )
 }

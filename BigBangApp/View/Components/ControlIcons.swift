@@ -31,7 +31,7 @@ struct ControlIcons: View {
                 Image(systemName: "bubble.and.pencil")
                     .foregroundStyle(.gray)
             }
-            if episode.rating > 0 {
+            if episode.rating > 0 && episode.rating <= 5 {
                 Text("\(episode.rating)")
                     .bold()
                     .padding(.vertical, 5)

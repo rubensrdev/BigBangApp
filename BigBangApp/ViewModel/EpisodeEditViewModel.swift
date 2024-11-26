@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 final class EpisodeEditViewModel: ObservableObject {
     
@@ -18,6 +19,27 @@ final class EpisodeEditViewModel: ObservableObject {
     
     init(episode: Episode) {
         self.episode = episode
+        self.isFavorite = episode.favorite
+        self.isWatched = episode.watched
+        self.rating = episode.rating
+        self.notes = episode.notes
+    }
+    
+    func progressColor(for rating: Int) -> Color {
+        switch rating {
+        case 0...1:
+            return .red
+        case 2:
+            return .orange
+        case 3:
+            return .yellow
+        case 4:
+            return .green.opacity(0.4)
+        case 5:
+            return .green
+        default:
+            return .gray
+        }
     }
     
 }
