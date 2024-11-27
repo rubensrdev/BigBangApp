@@ -30,6 +30,8 @@ final class BigBangViewModel: ObservableObject {
         }
     }
     @Published var filteredEpisodes: Episodes = []
+    @Published var favoriteEpisodes: Episodes = []
+    
     
     init(respository: Repository = Repository()) {
         self.respository = respository
@@ -38,6 +40,7 @@ final class BigBangViewModel: ObservableObject {
             if !episodes.isEmpty {
                 seasonSelected = .defaultSeason
                 updateFilteredEpisodes()
+                updateFavoriteEpisodes()
             }
         } catch {
             print("Error loading episodes: \(error.localizedDescription)")
@@ -57,6 +60,12 @@ final class BigBangViewModel: ObservableObject {
         if let index = episodes.firstIndex(where: { $0.id == episode.id }) {
             episodes[index] = episode
             updateFilteredEpisodes()
+            updateFavoriteEpisodes()
         }
+    }
+    
+    func updateFavoriteEpisodes() {
+        favoriteEpisodes = episodes.filter { $0.favorite }
+                                    .sorted { $0.episodeData.number < $1.episodeData.number }
     }
 }
