@@ -65,6 +65,5 @@ struct FavouritesView: View {
 }
 
 #Preview {
-    FavouritesView()
-        .environmentObject(BigBangViewModel())
+    FavouritesView.preview
 }

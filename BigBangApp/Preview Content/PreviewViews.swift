@@ -5,7 +5,7 @@
 //  Created by Rubén Segura Romo on 25/11/24.
 //
 
-import Foundation
+import SwiftUI
 
 extension BigBang {
     static let preview: BigBang = .init(
@@ -29,4 +29,32 @@ extension Episode {
         rating: 3,
         notes: "Very funny episode, good moments too"
     )
+}
+
+extension EntryView {
+    static var preview: some View {
+        EntryView()
+            .environmentObject(BigBangViewModel(repository: RepositoryPreview()))
+    }
+}
+
+extension EpisodesListView {
+    static var preview: some View {
+        EpisodesListView()
+            .environmentObject(BigBangViewModel(repository: RepositoryPreview()))
+    }
+}
+
+extension EpisodeEditView {
+    static var preview: some View {
+        EpisodeEditView(episodeEditVM: EpisodeEditViewModel(episode: .preview))
+            .environmentObject(BigBangViewModel(repository: RepositoryPreview()))
+    }
+}
+
+extension FavouritesView {
+    static var preview: some View {
+        FavouritesView()
+            .environmentObject(BigBangViewModel(repository: RepositoryPreview()))
+    }
 }

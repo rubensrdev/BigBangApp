@@ -10,7 +10,7 @@ import SwiftUI
 struct EntryView: View {
     var body: some View {
         TabView {
-            EpisodesList()
+            EpisodesListView()
                 .tabItem {
                     Label("Episodes", systemImage: "tv")
                 }
@@ -23,6 +23,5 @@ struct EntryView: View {
 }
 
 #Preview {
-    EntryView()
-        .environmentObject(BigBangViewModel())
+    EntryView.preview
 }

@@ -8,12 +8,12 @@
 import Foundation
 
 final class BigBangViewModel: ObservableObject {
-    let respository: Repository
+    let repository: RepositoryProtocol
     
     @Published var episodes: Episodes {
         didSet {
             do {
-                try respository.save(episodes)
+                try repository.saveEpisodes(episodes)
             } catch {
                 print("Error saving episodes from var: \(error.localizedDescription)")
             }
@@ -33,10 +33,10 @@ final class BigBangViewModel: ObservableObject {
     @Published var favoriteEpisodes: Episodes = []
     
     
-    init(respository: Repository = Repository()) {
-        self.respository = respository
+    init(repository: RepositoryProtocol = Repository()) {
+        self.repository = repository
         do {
-            self.episodes = try respository.loadEpisodes()
+            self.episodes = try repository.loadEpisodes()
             if !episodes.isEmpty {
                 seasonSelected = .defaultSeason
                 updateFilteredEpisodes()

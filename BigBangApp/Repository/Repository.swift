@@ -14,7 +14,18 @@ protocol RepositoryProtocol {
     func saveEpisodes(_ episodes: Episodes) throws
 }
 
-struct Repository {
+extension RepositoryProtocol {
+    func loadEpisodesAction(from url: URL) throws -> Episodes {
+        let data = try Data(contentsOf: url)
+        return try JSONDecoder().decode(Episodes.self, from: data)
+    }
+    func saveEpisodes(_ episodes: Episodes) throws {
+        let data = try JSONEncoder().encode(episodes)
+        try data.write(to: urlDataSave, options: [.atomic, .completeFileProtection])
+    }
+}
+
+struct Repository: RepositoryProtocol {
     
     var urlDataJson: URL {
         Bundle.main.url(forResource: "BigBangData", withExtension: "json")!
@@ -34,14 +45,10 @@ struct Repository {
             let data = try Data(contentsOf: urlDataJson)
             let bigBangs = try JSONDecoder().decode(bigBangs.self, from: data)
             let episodes = convertBigBangsToEpisodes(bigBangs)
-            try save(episodes)
+            try saveEpisodes(episodes)
             return episodes
         }
     }
-    
-    func save(_ episodes: Episodes) throws {
-        print("Saving episodes")
-        let data = try JSONEncoder().encode(episodes)
-        try data.write(to: urlDataSave, options: [.atomic, .completeFileProtection])
-    }
 }
+
+

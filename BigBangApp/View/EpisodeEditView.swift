@@ -48,8 +48,7 @@ struct EpisodeEditView: View {
 
 #Preview {
     NavigationStack {
-        EpisodeEditView(episodeEditVM: EpisodeEditViewModel(episode: .preview))
-            .environmentObject(BigBangViewModel())
+        EpisodeEditView.preview
     }
 }
 

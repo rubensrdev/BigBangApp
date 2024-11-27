@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct EpisodesList: View {
+struct EpisodesListView: View {
     @EnvironmentObject private var bigBangVM: BigBangViewModel
     
     var body: some View {
@@ -30,8 +30,7 @@ struct EpisodesList: View {
 }
 
 #Preview {
-    EpisodesList()
-        .environmentObject(BigBangViewModel())
+    EpisodesListView.preview
 }
 
 

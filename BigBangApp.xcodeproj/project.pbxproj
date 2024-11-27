@@ -11,7 +11,7 @@
 		4526AFDB2CEF4DCF00D69017 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4526AFD62CEF4DCF00D69017 /* Assets.xcassets */; };
 		4526AFDC2CEF4DCF00D69017 /* BigBangAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4526AFD72CEF4DCF00D69017 /* BigBangAppApp.swift */; };
 		4526AFDD2CEF4DCF00D69017 /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4526AFD82CEF4DCF00D69017 /* EntryView.swift */; };
-		4526AFE42CEF4E5E00D69017 /* EpisodesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4526AFE32CEF4E5E00D69017 /* EpisodesList.swift */; };
+		4526AFE42CEF4E5E00D69017 /* EpisodesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4526AFE32CEF4E5E00D69017 /* EpisodesListView.swift */; };
 		4526AFE82CEF4F4D00D69017 /* BigBangData.json in Resources */ = {isa = PBXBuildFile; fileRef = 4526AFE72CEF4F4D00D69017 /* BigBangData.json */; };
 		4526AFEA2CEF4F6300D69017 /* BigBangDataTest.json in Resources */ = {isa = PBXBuildFile; fileRef = 4526AFE92CEF4F6300D69017 /* BigBangDataTest.json */; };
 		4526AFEC2CEF50FE00D69017 /* BigBang.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4526AFEB2CEF50FE00D69017 /* BigBang.swift */; };
@@ -27,6 +27,7 @@
 		4526B0032CF4A12A00D69017 /* EpisodeEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4526B0022CF4A12A00D69017 /* EpisodeEditView.swift */; };
 		4526B0052CF73CE800D69017 /* EpisodeInformationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4526B0042CF73CE800D69017 /* EpisodeInformationCard.swift */; };
 		4526B0072CF73DDE00D69017 /* EpisodeControlEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4526B0062CF73DDE00D69017 /* EpisodeControlEdit.swift */; };
+		45B6578B2CF79432004977BC /* RepositoryPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B6578A2CF79432004977BC /* RepositoryPreview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +36,7 @@
 		4526AFD62CEF4DCF00D69017 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4526AFD72CEF4DCF00D69017 /* BigBangAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigBangAppApp.swift; sourceTree = "<group>"; };
 		4526AFD82CEF4DCF00D69017 /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
-		4526AFE32CEF4E5E00D69017 /* EpisodesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesList.swift; sourceTree = "<group>"; };
+		4526AFE32CEF4E5E00D69017 /* EpisodesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesListView.swift; sourceTree = "<group>"; };
 		4526AFE72CEF4F4D00D69017 /* BigBangData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BigBangData.json; sourceTree = "<group>"; };
 		4526AFE92CEF4F6300D69017 /* BigBangDataTest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BigBangDataTest.json; sourceTree = "<group>"; };
 		4526AFEB2CEF50FE00D69017 /* BigBang.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigBang.swift; sourceTree = "<group>"; };
@@ -51,6 +52,7 @@
 		4526B0022CF4A12A00D69017 /* EpisodeEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeEditView.swift; sourceTree = "<group>"; };
 		4526B0042CF73CE800D69017 /* EpisodeInformationCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeInformationCard.swift; sourceTree = "<group>"; };
 		4526B0062CF73DDE00D69017 /* EpisodeControlEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeControlEdit.swift; sourceTree = "<group>"; };
+		45B6578A2CF79432004977BC /* RepositoryPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryPreview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		4526AFD52CEF4DCF00D69017 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				45B6578A2CF79432004977BC /* RepositoryPreview.swift */,
 				4526AFD42CEF4DCF00D69017 /* Preview Assets.xcassets */,
 				4526AFE92CEF4F6300D69017 /* BigBangDataTest.json */,
 				4526AFFA2CF4937B00D69017 /* PreviewViews.swift */,
@@ -110,7 +113,7 @@
 			children = (
 				4526AFF32CEFB04600D69017 /* Components */,
 				4526AFD82CEF4DCF00D69017 /* EntryView.swift */,
-				4526AFE32CEF4E5E00D69017 /* EpisodesList.swift */,
+				4526AFE32CEF4E5E00D69017 /* EpisodesListView.swift */,
 				4526B0022CF4A12A00D69017 /* EpisodeEditView.swift */,
 				4526B0002CF4A11300D69017 /* FavouritesView.swift */,
 			);
@@ -245,13 +248,14 @@
 				4526B0012CF4A11300D69017 /* FavouritesView.swift in Sources */,
 				4526AFDC2CEF4DCF00D69017 /* BigBangAppApp.swift in Sources */,
 				4526AFDD2CEF4DCF00D69017 /* EntryView.swift in Sources */,
-				4526AFE42CEF4E5E00D69017 /* EpisodesList.swift in Sources */,
+				4526AFE42CEF4E5E00D69017 /* EpisodesListView.swift in Sources */,
 				4526AFFB2CF4937B00D69017 /* PreviewViews.swift in Sources */,
 				4526B0052CF73CE800D69017 /* EpisodeInformationCard.swift in Sources */,
 				4526AFF02CEF521D00D69017 /* BigBangViewModel.swift in Sources */,
 				4526AFF52CEFB05400D69017 /* OrderBySeasonToolbar.swift in Sources */,
 				4526AFEC2CEF50FE00D69017 /* BigBang.swift in Sources */,
 				4526AFFD2CF499C100D69017 /* ControlIcons.swift in Sources */,
+				45B6578B2CF79432004977BC /* RepositoryPreview.swift in Sources */,
 				4526AFEE2CEF513D00D69017 /* Repository.swift in Sources */,
 				4526AFFF2CF49F4000D69017 /* EpisodeEditViewModel.swift in Sources */,
 			);
