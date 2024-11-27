@@ -24,8 +24,8 @@ extension BigBang {
 extension Episode {
     static let preview: Episode = .init(
         episodeData: .preview,
-        favorite: false,
-        watched: false,
+        favorite: true,
+        watched: true,
         rating: 3,
         notes: "Very funny episode, good moments too"
     )
