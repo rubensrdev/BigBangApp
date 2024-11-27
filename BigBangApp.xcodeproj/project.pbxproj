@@ -25,6 +25,8 @@
 		4526AFFF2CF49F4000D69017 /* EpisodeEditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4526AFFE2CF49F4000D69017 /* EpisodeEditViewModel.swift */; };
 		4526B0012CF4A11300D69017 /* FavouritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4526B0002CF4A11300D69017 /* FavouritesView.swift */; };
 		4526B0032CF4A12A00D69017 /* EpisodeEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4526B0022CF4A12A00D69017 /* EpisodeEditView.swift */; };
+		4526B0052CF73CE800D69017 /* EpisodeInformationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4526B0042CF73CE800D69017 /* EpisodeInformationCard.swift */; };
+		4526B0072CF73DDE00D69017 /* EpisodeControlEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4526B0062CF73DDE00D69017 /* EpisodeControlEdit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		4526AFFE2CF49F4000D69017 /* EpisodeEditViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeEditViewModel.swift; sourceTree = "<group>"; };
 		4526B0002CF4A11300D69017 /* FavouritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesView.swift; sourceTree = "<group>"; };
 		4526B0022CF4A12A00D69017 /* EpisodeEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeEditView.swift; sourceTree = "<group>"; };
+		4526B0042CF73CE800D69017 /* EpisodeInformationCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeInformationCard.swift; sourceTree = "<group>"; };
+		4526B0062CF73DDE00D69017 /* EpisodeControlEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeControlEdit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,8 @@
 		4526AFF32CEFB04600D69017 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				4526B0062CF73DDE00D69017 /* EpisodeControlEdit.swift */,
+				4526B0042CF73CE800D69017 /* EpisodeInformationCard.swift */,
 				4526AFFC2CF499C100D69017 /* ControlIcons.swift */,
 				4526AFF82CF4932600D69017 /* EpisodeRow.swift */,
 				4526AFF42CEFB05400D69017 /* OrderBySeasonToolbar.swift */,
@@ -235,11 +241,13 @@
 				4526AFF92CF4932600D69017 /* EpisodeRow.swift in Sources */,
 				4526AFF22CEF54EB00D69017 /* Episode.swift in Sources */,
 				4526B0032CF4A12A00D69017 /* EpisodeEditView.swift in Sources */,
+				4526B0072CF73DDE00D69017 /* EpisodeControlEdit.swift in Sources */,
 				4526B0012CF4A11300D69017 /* FavouritesView.swift in Sources */,
 				4526AFDC2CEF4DCF00D69017 /* BigBangAppApp.swift in Sources */,
 				4526AFDD2CEF4DCF00D69017 /* EntryView.swift in Sources */,
 				4526AFE42CEF4E5E00D69017 /* EpisodesList.swift in Sources */,
 				4526AFFB2CF4937B00D69017 /* PreviewViews.swift in Sources */,
+				4526B0052CF73CE800D69017 /* EpisodeInformationCard.swift in Sources */,
 				4526AFF02CEF521D00D69017 /* BigBangViewModel.swift in Sources */,
 				4526AFF52CEFB05400D69017 /* OrderBySeasonToolbar.swift in Sources */,
 				4526AFEC2CEF50FE00D69017 /* BigBang.swift in Sources */,
