@@ -10,7 +10,7 @@ import SwiftUI
 
 final class EpisodeEditViewModel: ObservableObject {
     
-    let episode: Episode
+    var episode: Episode
     
     @Published var isFavorite: Bool = false
     @Published var isWatched: Bool = false
@@ -40,6 +40,14 @@ final class EpisodeEditViewModel: ObservableObject {
         default:
             return .gray
         }
+    }
+    
+    func updateEpisodeControlItems() -> Episode {
+        episode.favorite = isFavorite
+        episode.watched = isWatched
+        episode.rating = rating
+        episode.notes = notes
+        return Episode(episodeData: episode.episodeData, favorite: isFavorite, watched: isWatched, rating: rating, notes: notes)
     }
     
 }

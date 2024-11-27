@@ -17,35 +17,46 @@ struct EpisodeEditView: View {
         Form {
             VStack(alignment: .leading) {
                 Section {
-                    HStack {
-                        Spacer()
-                        Image("\(episodeEditVM.episode.episodeData.image)")
-                            .resizable()
-                            .scaledToFit()
-                            .clipShape(RoundedRectangle(cornerRadius: 5))
-                            .frame(maxWidth: 250)
-                        Spacer()
-                    }
-                    LabeledContent {
-                        Text("\(episodeEditVM.episode.episodeData.name)")
-                    } label: {
-                        Text("Name:").font(.headline)
-                    }
-                    .padding(.top, 20)
-                    LabeledContent {
-                        Text("\(episodeEditVM.episode.episodeData.seasonAndEpisode)")
-                    } label: {
-                        Text("Season & Episode:").font(.headline)
-                    }
-                    LabeledContent {
-                        Text("\(episodeEditVM.episode.episodeData.airdate)")
-                    } label: {
-                        Text("Airdate:").font(.headline)
-                    }
-                    LabeledContent {
-                        Text("\(episodeEditVM.episode.episodeData.runtimeInMinutes)")
-                    } label: {
-                        Text("Runtime:").font(.headline)
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 10)
+                            .fill(Color.secondary.opacity(0.1))
+                            .shadow(radius: 2)
+                        VStack(alignment: .leading, spacing: 10) {
+                            HStack {
+                                Spacer()
+                                Image("\(episodeEditVM.episode.episodeData.image)")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .clipShape(RoundedRectangle(cornerRadius: 5))
+                                    .frame(maxWidth: 250)
+                                Spacer()
+                            }
+                            LabeledContent {
+                                Text("\(episodeEditVM.episode.episodeData.name)")
+                            } label: {
+                                Text("Name:").font(.headline)
+                            }
+                            .padding(.top, 20)
+                            LabeledContent {
+                                Text("\(episodeEditVM.episode.episodeData.seasonAndEpisode)")
+                            } label: {
+                                Text("Season & Episode:").font(.headline)
+                            }
+                            LabeledContent {
+                                Text("\(episodeEditVM.episode.episodeData.airdate)")
+                            } label: {
+                                Text("Airdate:").font(.headline)
+                            }
+                            LabeledContent {
+                                Text("\(episodeEditVM.episode.episodeData.runtimeInMinutes)")
+                            } label: {
+                                Text("Runtime:").font(.headline)
+                            }
+                            Text("Summary:").font(.headline)
+                            Text("\(episodeEditVM.episode.episodeData.summary)")
+                                .multilineTextAlignment(.leading)
+                        }
+                        .padding()
                     }
                 } header: {
                     Text("Episode Information")
@@ -97,7 +108,7 @@ struct EpisodeEditView: View {
                 
             }
         }
-        //.navigationTitle("Episode Edit")
+        .navigationTitle("Episode Edit")
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarBackButtonHidden()
         .toolbar {
@@ -109,7 +120,9 @@ struct EpisodeEditView: View {
             }
             ToolbarItem(placement: .confirmationAction) {
                 Button {
-                    
+                    let updatedEpisode = episodeEditVM.updateEpisodeControlItems()
+                    bigBangVM.update(updatedEpisode)
+                    dismiss()
                 } label: {
                     Text("Save")
                 }

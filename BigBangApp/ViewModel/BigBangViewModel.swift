@@ -52,4 +52,11 @@ final class BigBangViewModel: ObservableObject {
                 return matchesSeason && matchesSearch
         }.sorted { $0.episodeData.number < $1.episodeData.number }
     }
+    
+    func update(_ episode: Episode) {
+        if let index = episodes.firstIndex(where: { $0.id == episode.id }) {
+            episodes[index] = episode
+            updateFilteredEpisodes()
+        }
+    }
 }
