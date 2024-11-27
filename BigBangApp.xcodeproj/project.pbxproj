@@ -28,6 +28,8 @@
 		4526B0052CF73CE800D69017 /* EpisodeInformationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4526B0042CF73CE800D69017 /* EpisodeInformationCard.swift */; };
 		4526B0072CF73DDE00D69017 /* EpisodeControlEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4526B0062CF73DDE00D69017 /* EpisodeControlEdit.swift */; };
 		45B6578B2CF79432004977BC /* RepositoryPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B6578A2CF79432004977BC /* RepositoryPreview.swift */; };
+		45B6578D2CF79860004977BC /* RepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B6578C2CF79860004977BC /* RepositoryProtocol.swift */; };
+		45B6578F2CF79C89004977BC /* RepositoryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B6578E2CF79C89004977BC /* RepositoryError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,8 @@
 		4526B0042CF73CE800D69017 /* EpisodeInformationCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeInformationCard.swift; sourceTree = "<group>"; };
 		4526B0062CF73DDE00D69017 /* EpisodeControlEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeControlEdit.swift; sourceTree = "<group>"; };
 		45B6578A2CF79432004977BC /* RepositoryPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryPreview.swift; sourceTree = "<group>"; };
+		45B6578C2CF79860004977BC /* RepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryProtocol.swift; sourceTree = "<group>"; };
+		45B6578E2CF79C89004977BC /* RepositoryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,8 @@
 		4526AFE02CEF4DFB00D69017 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				45B6578E2CF79C89004977BC /* RepositoryError.swift */,
+				45B6578C2CF79860004977BC /* RepositoryProtocol.swift */,
 				4526AFED2CEF513D00D69017 /* Repository.swift */,
 			);
 			path = Repository;
@@ -248,6 +254,7 @@
 				4526B0012CF4A11300D69017 /* FavouritesView.swift in Sources */,
 				4526AFDC2CEF4DCF00D69017 /* BigBangAppApp.swift in Sources */,
 				4526AFDD2CEF4DCF00D69017 /* EntryView.swift in Sources */,
+				45B6578F2CF79C89004977BC /* RepositoryError.swift in Sources */,
 				4526AFE42CEF4E5E00D69017 /* EpisodesListView.swift in Sources */,
 				4526AFFB2CF4937B00D69017 /* PreviewViews.swift in Sources */,
 				4526B0052CF73CE800D69017 /* EpisodeInformationCard.swift in Sources */,
@@ -258,6 +265,7 @@
 				45B6578B2CF79432004977BC /* RepositoryPreview.swift in Sources */,
 				4526AFEE2CEF513D00D69017 /* Repository.swift in Sources */,
 				4526AFFF2CF49F4000D69017 /* EpisodeEditViewModel.swift in Sources */,
+				45B6578D2CF79860004977BC /* RepositoryProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
