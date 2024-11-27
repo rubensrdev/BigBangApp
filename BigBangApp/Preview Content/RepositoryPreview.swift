@@ -17,17 +17,23 @@ struct RepositoryPreview: RepositoryProtocol {
     }
     
     func loadEpisodes() throws -> Episodes {
-        if FileManager.default.fileExists(atPath: urlDataSave.path()) {
-            print("Loading episodes from FILE PREVIEW in \(urlDataSave.path())")
-            let data = try Data(contentsOf: urlDataSave)
-            return try JSONDecoder().decode(Episodes.self, from: data)
-        } else {
-            print("Loading episodes from JSON PREVIEW")
-            let data = try Data(contentsOf: urlDataJson)
-            let bigBangs = try JSONDecoder().decode(bigBangs.self, from: data)
-            let episodes = convertBigBangsToEpisodes(bigBangs)
-            try saveEpisodes(episodes)
-            return episodes
+        do {
+            if FileManager.default.fileExists(atPath: urlDataSave.path()) {
+                print("Loading episodes from FILE PREVIEW in \(urlDataSave.path())")
+                let data = try Data(contentsOf: urlDataSave)
+                return try JSONDecoder().decode(Episodes.self, from: data)
+            } else {
+                print("Loading episodes from JSON PREVIEW")
+                let data = try Data(contentsOf: urlDataJson)
+                let bigBangs = try JSONDecoder().decode(bigBangs.self, from: data)
+                let episodes = convertBigBangsToEpisodes(bigBangs)
+                try saveEpisodes(episodes)
+                return episodes
+            }
+        } catch let error as DecodingError {
+            throw RepositoryError.decodingFailed
+        } catch {
+            throw RepositoryError.unknown(error: error)
         }
     }
 }
