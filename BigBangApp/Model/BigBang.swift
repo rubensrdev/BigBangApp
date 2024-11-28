@@ -57,12 +57,16 @@ struct BigBang: Codable, Hashable, Identifiable {
     let summary: String
 }
 
+/// Un alias de tipo para una colección de estructuras `BigBang`.
 typealias bigBangs = [BigBang]
 
+/// Extensión de la estructura `BigBang` que proporciona propiedades calculadas útiles.
 extension BigBang {
+    /// Devuelve el número de temporada y episodio en un formato abreviado.
     var seasonAndEpisode: String {
         "S\(season) E\(number)"
     }
+    /// Devuelve la duración del episodio en minutos como una cadena con sufijo.
     var runtimeInMinutes: String {
         "\(runtime) min"
     }
