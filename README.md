@@ -1,1 +1,1 @@
-App guía de episodios de la serie Big Bang Theory - Ejercicio del SDP'24 - Swift 6, SwiftUI, MVVM, OPP, Extension Pattern, Documentacion con DooC
+App guía de episodios de la serie Big Bang Theory sobre la que puedes llevar un seguimiento de episodios vistos, favoritos, puntuaciones, notas  - Ejercicio del SDP'24 - Swift 6, SwiftUI, MVVM, OPP, Extension Pattern, Documentacion con DooC
